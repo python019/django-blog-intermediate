@@ -1,5 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-     Ko'rinish       
+<br><br><br><br><br>
+
+     {% for post in posts %}
+
+          <h1>{{ post.nomi }}</h1>
+          
+     {% endfor %}
+
+<br><br><br><br><br>    
 {% endblock content %}

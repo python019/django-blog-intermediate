@@ -1,0 +1,32 @@
+html,
+body,
+a,
+button {
+    cursor: none !important;
+}
+
+.cursor-dot,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    z-index: 99999 !important;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+}
+
+.cursor-dot-outline {
+    width: 5px;
+    height: 5px;
+    background-color: rgba(254, 66, 47, .6);
+}

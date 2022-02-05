@@ -1,14 +1,155 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<br><br><br><br><br>
+      
 
-     {% for post in posts %}
 
-          <img src="{{ post.rasm.url }}" alt="" width="100px">
-          <h1>{{ post.nomi }}</h1>
-          
-     {% endfor %}
+    
 
-<br><br><br><br><br>    
-{% endblock content %}
+    <!--  off_canvus_menu -->
+    <div class="off_canvus_menu d-lg-none">
+        <div class="canvas_menu_header">
+            <a class="navbar-brand main_logo" href="index.html"><img src="img/logo.png" srcset="img/logo_2x.png 2x"
+                    alt="logo">
+            </a>
+            <span class="close_icon">
+                <i class="ti-close"></i>
+            </span>
+        </div>
+        <div class="canvus_menu_warp">
+            <div class="canvus_menu_iner">
+                <ul>
+                    <li class="nav-item dropdown horizontal_effect">
+                        <a class="nav-link dropdown-toggle tittle_animation" href="#" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" data-hover="Home">Home</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown">
+                                <a class="dropdown-item" href="#">Home page list</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">home 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Creative Carousel 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Masonry Portfolio</a></li>
+                                    <li><a class="dropdown-item" href="#">Freelancer Portfolio</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-item" href="#">Home page list</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">home 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Creative Carousel 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Masonry Portfolio</a></li>
+                                    <li><a class="dropdown-item" href="#">Freelancer Portfolio</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-item" href="#">Home page list</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">home 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Creative Carousel 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Masonry Portfolio</a></li>
+                                    <li><a class="dropdown-item" href="#">Freelancer Portfolio</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-item" href="#">Home page list</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">home 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Creative Carousel 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Masonry Portfolio</a></li>
+                                    <li><a class="dropdown-item" href="#">Freelancer Portfolio</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown">
+                                <a class="dropdown-item" href="#">About</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">About 1</a></li>
+                                    <li><a class="dropdown-item" href="#">About 2</a></li>
+                                    <li><a class="dropdown-item" href="#">About 3</a></li>
+                                    <li><a class="dropdown-item" href="#">About 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-item" href="#">services</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">services 1</a></li>
+                                    <li><a class="dropdown-item" href="#">services 2</a></li>
+                                    <li><a class="dropdown-item" href="#">services 3</a></li>
+                                    <li><a class="dropdown-item" href="#">services 4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cases</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">blog</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">blog 1</a></li>
+                            <li><a class="dropdown-item" href="#">blog 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Contact</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Contact 1</a></li>
+                            <li><a class="dropdown-item" href="#">Contact 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu_btm_section">
+            <h5>Connect with us</h5>
+            <div class="social_icon">
+                <a href="#"><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-twitter-alt"></i></a>
+                <a href="#"><i class="ti-dribbble"></i></a>
+            </div>
+        </div>
+    </div>
+    <!--  off_canvus_menu -->
+
+    <!-- portfolio list here -->
+    <section class="portfolio_card_padding">
+        <div class="portfolio_card_style_2 ft_font text-center padding_bottom">
+            <div class="card-columns">
+                {% for post in posts%}
+                <div class="card wow fadeInDown" data-wow-delay=".3s">
+                    <div class="single_portfolio_part overlay_effect">
+                        <a href="single_project_1.html" class=" single_portfolio_img">
+                            <div class="overlay_effect_in">
+                                <img src="{{ post.rasm.url }}" alt="#" class="matrix3d_1 img-fluid">
+                            </div>
+                        </a>
+                        <h3> 
+                            <span class="overlay_effect_in horizontal_effect">
+                                <a class="tittle_animation" href="single_project_1.html" data-hover="{{ post.nomi }}"> {{ post.nomi }}</a> 
+                            </span> 
+                        </h3>
+                        <p> <span class="overlay_effect_in">Batafsil</span></p>
+                    </div>
+                </div>
+                {% endfor %}
+                
+            </div>
+            <div class="overlay_effect d-inline-flex">
+                <div class="overlay_effect_in mt-2">
+                    <a href="#" class="cu_btn animate_btn mt-0">View More</a>
+                </div>
+            </div>
+        </div>
+        {% include 'details/footer.html' %}
+    </section>
+    <!-- portfolio list end -->
+
+
+    {% endblock content %}

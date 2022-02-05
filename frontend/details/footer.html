@@ -1,3 +1,49 @@
-<footer class="py-3 my-4">
-    <p class="text-center text-muted">&copy; 2022 SUSYS, Inc</p>
-</footer>
+{% load static %}
+<!-- footer part here -->
+<div class="footer_section white_bg">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-xl-3 col-lg-3 col-sm-6 wow fadeInLeft" data-wow-delay=".3s">
+                <div class="single_footer_widget footer_nav text-lg-left">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>9526 Selby Circle</li>
+                        <li>Providence, RI 02904</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-sm-6 wow fadeInLeft" data-wow-delay=".5s">
+                <div class="single_footer_widget footer_nav text-lg-center">
+                    <a class="main_logo" href="index.html"><img src="{% static 'img/logo.png' %}"
+                        width="50px" alt="logo">
+                    </a>
+                    <div class="social_icon float-none">
+                        <a href="#"><i class="ti-dribbble"></i></a>
+                        <a href="#"><i class="ti-facebook"></i></a>
+                        <a href="#"><i class="ti-twitter-alt"></i></a>
+                        <a href="#"><i class="ti-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-sm-6 wow fadeInLeft" data-wow-delay=".7s">
+                <div class="single_footer_widget footer_nav text-lg-right">
+                    <h4>Visit us</h4>
+                    <ul>
+                        <li>+91 017-65900</li>
+                        <li>hentai@example.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-lg-12">
+                <div class="copyright_part text-center">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-6 col-md-8">
+                            <p>© Copyright 2020 Design by <a href="#" class="text_underline">Droit Themes</a> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

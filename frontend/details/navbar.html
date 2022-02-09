@@ -3,7 +3,7 @@
 <div class="offcanvas_overlay"></div>
 <header class="header_part dark fixed_left_content">
     <nav class="d-flex align-content-between flex-wrap">
-        <a class="navbar-brand main_logo" href="index.html"><img src="{% static 'img/logo.png' %}" width="74" srcset="{% static 'img/logo.png' %}"
+        <a class="navbar-brand main_logo" href="/"><img src="{% static 'img/logo.png' %}" width="74" srcset="{% static 'img/logo.png' %}"
                 alt="logo">
         </a>
         <!-- offcanvas menu icon -->
@@ -28,7 +28,11 @@
         <div class="canvus_menu_warp h-auto d-none d-lg-flex">
             <div class="canvus_menu_iner">
                 <ul>
-                    
+                    <li class="nav-item dropdown">
+                        <a href="{% url 'home' %}">
+                          All
+                        </a>
+                    </li>
                     {% for category in categories %}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

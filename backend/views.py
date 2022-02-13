@@ -3,7 +3,15 @@ from django.shortcuts import render
 from .models import *
 
 def home(request):
-    posts = Post.objects.all()
+
+    category = request.GET.get('category')
+    
+    if category == None:
+        posts = Post.objects.all()
+    else:
+        posts = Post.objects.filter(category__name=category)
+
+
     categories = Category.objects.all()
     context = {
        "posts": posts,

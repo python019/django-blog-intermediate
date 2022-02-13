@@ -127,15 +127,15 @@
                     <div class="single_portfolio_part overlay_effect">
                         <a href="single_project_1.html" class=" single_portfolio_img">
                             <div class="overlay_effect_in">
-                                <img src="{{ post.rasm.url }}" alt="#" class="matrix3d_1 img-fluid">
+                                <img src="{{ post.image.url }}" alt="#" class="matrix3d_1 img-fluid">
                             </div>
                         </a>
                         <h3> 
                             <span class="overlay_effect_in horizontal_effect">
-                                <a class="tittle_animation" data-hover="{{ post.nomi }}"> {{ post.nomi }}</a> 
+                                <a class="tittle_animation" data-hover="{{ post.name }}"> {{ post.name }}</a> 
                             </span> 
                         </h3>
-                        <p> <span class="overlay_effect_in">{{ post.tanlov }}</span></p>
+                        <p> <span class="overlay_effect_in">{{ post.category }}</span></p>
                     </div>
                 </div>
                 {% endfor %}

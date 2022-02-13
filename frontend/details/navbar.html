@@ -35,8 +35,8 @@
                     </li>
                     {% for category in categories %}
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {{ category.nomi }}
+                        <a href="{% url 'home' %}?category={{ category.name }}">
+                            {{ category.name }}
                         </a>
                     </li>
                     {% endfor %}

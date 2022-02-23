@@ -1,0 +1,35 @@
+html,body, a, button{
+    cursor: none !important;
+}
+
+.cursor-dot,
+.cursor-dot_2,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    z-index: 9999999999 !important;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+    width: 7px;
+    height: 7px;
+    background-color: #FFD6D5;
+}
+.cursor-dot_2 {
+    width: 7px;
+    height: 7px;
+    background-color: #85302F;
+}
+
+.cursor-dot-outline {
+    width: 25px;
+    height: 25px;
+    /* background-color: rgba(133, 48, 47, .7); */
+    background-color: rgba(254, 66, 47, .6);
+}

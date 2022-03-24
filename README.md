@@ -1,1 +1,1 @@
-# django-blog-intermediate
+# django-blog-intermediate.
